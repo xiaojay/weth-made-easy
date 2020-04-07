@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -p tinyify index.js > bundle.js"
+    "build": "browserify -p tinyify index.js > bundle.js",
+    "deploy": "browserify -p tinyify index.js > bundle.js && cp index.html public && cp bundle.js public &&cp style.css public/css"
   },
   "repository": {
     "type": "git",
